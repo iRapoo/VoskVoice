@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        About 16% / 14% of a typical round screen (≈227 dp wide), so rows near the top and bottom
+        of the circle are not clipped. Same values as in WristGestures, tuned on a TicWatch Pro 3.
+    -->
+    <dimen name="round_padding_horizontal">36dp</dimen>
+    <dimen name="round_padding_vertical">32dp</dimen>
+</resources>

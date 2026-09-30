@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoskVoice</string>
+    <string name="voice_input_label">VoskVoice voice input</string>
+
+    <string name="language_ru">Russian</string>
+    <string name="language_en">English</string>
+
+    <!-- "Speak now" screen -->
+    <string name="voice_mic_description">Microphone</string>
+    <string name="voice_starting">Starting…</string>
+    <string name="voice_loading">Recording, the text will appear in a few seconds</string>
+    <string name="voice_speak">Speak now</string>
+    <string name="voice_listening">Listening… tap to finish</string>
+    <string name="voice_processing">Recognizing…</string>
+    <string name="voice_no_speech">Didn\'t catch that. Tap to try again</string>
+    <string name="voice_no_model">No %1$s model. Tap to download</string>
+    <string name="voice_busy">Recognizer is busy. Tap to try again</string>
+    <string name="voice_audio_error">Microphone is unavailable. Tap to try again</string>
+    <string name="voice_no_permission">VoskVoice needs the microphone permission</string>
+    <string name="voice_only_one_model">Download the %1$s model to switch languages</string>
+
+    <!-- Setup screen -->
+    <string name="test">Try it</string>
+    <string name="test_cancelled">(cancelled)</string>
+    <string name="mic_granted">Microphone: allowed</string>
+    <string name="mic_request">Allow microphone</string>
+
+    <string name="models_header">Models (offline)</string>
+    <string name="model_download">%1$s · download %2$d MB</string>
+    <string name="model_connecting">%1$s · connecting…</string>
+    <string name="model_progress">%1$s · %2$d%%</string>
+    <string name="model_failed">%1$s · error: %2$s. Tap to retry</string>
+    <string name="model_installed">%1$s ✓ %2$d MB</string>
+    <string name="model_delete_hint">Long press a model to delete it</string>
+    <string name="model_deleted">%1$s model deleted</string>
+    <string name="default_language">Default: %1$s</string>
+    <string name="keep_loaded">Keep model in memory</string>
+    <string name="keep_loaded_hint">Voice input starts instantly instead of after 5–8 s. Uses about 170 MB of RAM.</string>
+    <string name="keeper_channel">Model in memory</string>
+    <string name="keeper_text">Speech model is ready</string>
+
+    <string name="system_header">System</string>
+    <string name="voice_input_status">Voice input button opens: %1$s</string>
+    <string name="handler_ours">VoskVoice ✓</string>
+    <string name="handler_ask">a chooser (pick VoskVoice → Always)</string>
+    <string name="handler_other">another app</string>
+    <string name="handler_none">nothing</string>
+    <string name="recognizer_ours">System recognizer: VoskVoice ✓</string>
+    <string name="recognizer_not_set">System recognizer: not set (see README, adb)</string>
+    <string name="setup_hint">When an app asks which one to use for voice input, choose VoskVoice and \"Always\".</string>
+</resources>

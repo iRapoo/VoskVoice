@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Setup screen. Plain framework views keep the APK small.
+    Large horizontal padding keeps content inside the round display.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/round_padding_horizontal"
+        android:paddingVertical="@dimen/round_padding_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <Button
+            android:id="@+id/test"
+            style="@style/Row"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_mic"
+            android:text="@string/test" />
+
+        <TextView
+            android:id="@+id/test_result"
+            android:visibility="gone"
+            style="@style/Caption"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/mic_permission"
+            style="@style/Row" />
+
+        <!-- Models -->
+        <TextView
+            style="@style/Header"
+            android:text="@string/models_header" />
+
+        <LinearLayout
+            android:id="@+id/models"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/Caption"
+            android:text="@string/model_delete_hint" />
+
+        <Button
+            android:id="@+id/default_language"
+            style="@style/Row" />
+
+        <Switch
+            android:id="@+id/keep_loaded"
+            style="@style/Row"
+            android:text="@string/keep_loaded" />
+
+        <TextView
+            style="@style/Caption"
+            android:text="@string/keep_loaded_hint" />
+
+        <!-- System -->
+        <TextView
+            style="@style/Header"
+            android:text="@string/system_header" />
+
+        <TextView
+            android:id="@+id/voice_input_status"
+            style="@style/Caption"
+            android:layout_marginTop="4dp"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/recognizer_status"
+            style="@style/Caption"
+            android:layout_marginTop="4dp"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            style="@style/Caption"
+            android:layout_marginTop="8dp"
+            android:text="@string/setup_hint" />
+    </LinearLayout>
+</ScrollView>

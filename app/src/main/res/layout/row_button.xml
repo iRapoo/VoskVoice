@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One model row on the setup screen; added from code for every language. -->
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Row" />

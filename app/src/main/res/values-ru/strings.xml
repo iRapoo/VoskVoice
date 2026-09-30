@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoskVoice</string>
+    <string name="voice_input_label">Голосовой ввод VoskVoice</string>
+
+    <string name="language_ru">Русский</string>
+    <string name="language_en">Английский</string>
+
+    <!-- Экран «Говорите» -->
+    <string name="voice_mic_description">Микрофон</string>
+    <string name="voice_starting">Запуск…</string>
+    <string name="voice_loading">Запись идёт, текст появится через пару секунд</string>
+    <string name="voice_speak">Говорите</string>
+    <string name="voice_listening">Слушаю… нажмите, чтобы закончить</string>
+    <string name="voice_processing">Распознаю…</string>
+    <string name="voice_no_speech">Не расслышал. Нажмите, чтобы повторить</string>
+    <string name="voice_no_model">Нет модели %1$s. Нажмите, чтобы скачать</string>
+    <string name="voice_busy">Распознавание занято. Нажмите, чтобы повторить</string>
+    <string name="voice_audio_error">Микрофон недоступен. Нажмите, чтобы повторить</string>
+    <string name="voice_no_permission">VoskVoice нужен доступ к микрофону</string>
+    <string name="voice_only_one_model">Скачайте модель %1$s, чтобы переключать язык</string>
+
+    <!-- Экран настроек -->
+    <string name="test">Проверить</string>
+    <string name="test_cancelled">(отменено)</string>
+    <string name="mic_granted">Микрофон: разрешён</string>
+    <string name="mic_request">Разрешить микрофон</string>
+
+    <string name="models_header">Модели (без интернета)</string>
+    <string name="model_download">%1$s · скачать %2$d МБ</string>
+    <string name="model_connecting">%1$s · подключение…</string>
+    <string name="model_progress">%1$s · %2$d%%</string>
+    <string name="model_failed">%1$s · ошибка: %2$s. Нажмите, чтобы повторить</string>
+    <string name="model_installed">%1$s ✓ %2$d МБ</string>
+    <string name="model_delete_hint">Долгое нажатие на модель удаляет её</string>
+    <string name="model_deleted">Модель «%1$s» удалена</string>
+    <string name="default_language">По умолчанию: %1$s</string>
+    <string name="keep_loaded">Держать модель в памяти</string>
+    <string name="keep_loaded_hint">Голосовой ввод стартует сразу, а не через 5–8 с. Занимает около 170 МБ памяти.</string>
+    <string name="keeper_channel">Модель в памяти</string>
+    <string name="keeper_text">Модель распознавания готова</string>
+
+    <string name="system_header">Система</string>
+    <string name="voice_input_status">Кнопка голосового ввода открывает: %1$s</string>
+    <string name="handler_ours">VoskVoice ✓</string>
+    <string name="handler_ask">выбор приложения (выберите VoskVoice → Всегда)</string>
+    <string name="handler_other">другое приложение</string>
+    <string name="handler_none">ничего</string>
+    <string name="recognizer_ours">Системный распознаватель: VoskVoice ✓</string>
+    <string name="recognizer_not_set">Системный распознаватель: не задан (см. README, adb)</string>
+    <string name="setup_hint">Когда приложение спросит, чем выполнить голосовой ввод, выберите VoskVoice и «Всегда».</string>
+</resources>

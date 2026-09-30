@@ -1,0 +1,38 @@
+name: Отзыв о часах / Device report
+description: Расскажите, как приложение работает на ваших часах / Tell how the app works on your watch
+labels: [device report]
+body:
+  - type: input
+    id: watch
+    attributes:
+      label: Модель часов / Watch model
+    validations:
+      required: true
+  - type: input
+    id: wearos
+    attributes:
+      label: Версия Wear OS и сборка / Wear OS version and build
+      description: Настройки → Система → О часах / Settings → System → About
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: Версия приложения / App version
+    validations:
+      required: true
+  - type: checkboxes
+    id: works
+    attributes:
+      label: Что работает / What works
+      options:
+        - label: Модель скачивается в приложении / The model downloads in the app
+        - label: Кнопка «Проверить» распознаёт речь / The "Try it" button recognizes speech
+        - label: Голосовой ввод в других приложениях открывает VoskVoice / Voice input in other apps opens VoskVoice
+        - label: Голосовой ответ на уведомления (Telegram, WhatsApp…) / Voice replies to notifications (Telegram, WhatsApp…)
+        - label: Режим «Держать модель в памяти» / "Keep model in memory" mode
+  - type: textarea
+    id: notes
+    attributes:
+      label: Комментарии / Notes
+      description: Качество распознавания, скорость, батарея, память / Recognition quality, speed, battery, memory

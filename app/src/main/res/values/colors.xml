@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF1E88E5</color>
+    <color name="idle">#FF546E7A</color>
+    <color name="ring">#401E88E5</color>
+</resources>

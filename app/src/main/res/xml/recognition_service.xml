@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lets the system link to our setup screen from its voice input settings. -->
+<recognition-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="xyz.quenix.voskvoice.ui.MainActivity" />
