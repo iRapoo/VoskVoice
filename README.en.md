@@ -32,7 +32,7 @@ replies to messages, notes.
 - **Tap the mic — the watch buzzes — speak.** The phrase ends by itself after a pause; tapping
   the mic ends it earlier, swiping cancels.
 - **Offline.** Audio never leaves the watch. Internet is needed only once, to download a model.
-- **Russian and English**, switched with the `RU/EN` button right on the recording screen.
+- **Russian and English**, switched with the **Русский / English** button right on the recording screen.
 - **Instant start:** the model is preloaded into memory (can be turned off).
 
 ---
@@ -169,7 +169,7 @@ punctuation. The first letter is capitalized automatically.
   site (alphacephei.com).
 - **Delete:** long-press a model.
 - **Default language:** the **Default** button on the main screen. On the recording screen the
-  `RU/EN` button switches languages, and the last one chosen becomes the default. If an app asks
+  **Русский / English** button switches languages, and the last one chosen becomes the default. If an app asks
   for a specific language, that one is used (if its model is downloaded).
 
 ### Keep model in memory
@@ -232,7 +232,7 @@ Gboard and "Always" were chosen in the chooser. Reset it in the watch settings:
 If there is no such item, uninstall and reinstall VoskVoice: when a new voice input app appears,
 Android shows the chooser again. Models will have to be downloaded again.
 
-**"No RU model. Tap to download".**
+**"The Russian model is not downloaded. Tap to download".**
 The model for the selected language is not downloaded. Tap the message or download the model on
 the main screen.
 

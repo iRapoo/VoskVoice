@@ -9,12 +9,12 @@
     <!-- "Speak now" screen -->
     <string name="voice_mic_description">Microphone</string>
     <string name="voice_starting">Starting…</string>
-    <string name="voice_loading">Recording, the text will appear in a few seconds</string>
+    <string name="voice_loading">Listening, text will appear shortly</string>
     <string name="voice_speak">Speak now</string>
     <string name="voice_listening">Listening… tap to finish</string>
     <string name="voice_processing">Recognizing…</string>
     <string name="voice_no_speech">Didn\'t catch that. Tap to try again</string>
-    <string name="voice_no_model">No %1$s model. Tap to download</string>
+    <string name="voice_no_model">The %1$s model is not downloaded. Tap to download</string>
     <string name="voice_busy">Recognizer is busy. Tap to try again</string>
     <string name="voice_audio_error">Microphone is unavailable. Tap to try again</string>
     <string name="voice_no_permission">VoskVoice needs the microphone permission</string>

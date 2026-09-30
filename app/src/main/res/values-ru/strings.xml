@@ -9,16 +9,16 @@
     <!-- Экран «Говорите» -->
     <string name="voice_mic_description">Микрофон</string>
     <string name="voice_starting">Запуск…</string>
-    <string name="voice_loading">Запись идёт, текст появится через пару секунд</string>
+    <string name="voice_loading">Слушаю, текст скоро появится</string>
     <string name="voice_speak">Говорите</string>
     <string name="voice_listening">Слушаю… нажмите, чтобы закончить</string>
     <string name="voice_processing">Распознаю…</string>
     <string name="voice_no_speech">Не расслышал. Нажмите, чтобы повторить</string>
-    <string name="voice_no_model">Нет модели %1$s. Нажмите, чтобы скачать</string>
+    <string name="voice_no_model">Модель «%1$s» не скачана. Нажмите, чтобы скачать</string>
     <string name="voice_busy">Распознавание занято. Нажмите, чтобы повторить</string>
     <string name="voice_audio_error">Микрофон недоступен. Нажмите, чтобы повторить</string>
     <string name="voice_no_permission">VoskVoice нужен доступ к микрофону</string>
-    <string name="voice_only_one_model">Скачайте модель %1$s, чтобы переключать язык</string>
+    <string name="voice_only_one_model">Скачайте модель «%1$s», чтобы переключать язык</string>
 
     <!-- Экран настроек -->
     <string name="test">Проверить</string>

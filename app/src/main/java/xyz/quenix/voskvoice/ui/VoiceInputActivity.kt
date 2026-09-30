@@ -101,7 +101,7 @@ class VoiceInputActivity : Activity(), Dictation.Listener {
         text.text = ""
         if (!ModelStore.isInstalled(this, language)) {
             dictation = null
-            show(Phase.NO_MODEL, getString(R.string.voice_no_model, language.label))
+            show(Phase.NO_MODEL, getString(R.string.voice_no_model, getString(language.nameRes)))
             return
         }
         show(Phase.LOADING, getString(R.string.voice_starting))
@@ -126,7 +126,7 @@ class VoiceInputActivity : Activity(), Dictation.Listener {
         var next = language.next()
         while (next != language && next !in installed) next = next.next()
         if (next == language) {
-            Toast.makeText(this, getString(R.string.voice_only_one_model, language.next().label), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.voice_only_one_model, getString(language.next().nameRes)), Toast.LENGTH_SHORT).show()
             return
         }
         language = next
@@ -189,7 +189,7 @@ class VoiceInputActivity : Activity(), Dictation.Listener {
         dictation = null
         when (error) {
             Dictation.Error.NO_SPEECH -> show(Phase.RETRY, getString(R.string.voice_no_speech))
-            Dictation.Error.NO_MODEL -> show(Phase.NO_MODEL, getString(R.string.voice_no_model, language.label))
+            Dictation.Error.NO_MODEL -> show(Phase.NO_MODEL, getString(R.string.voice_no_model, getString(language.nameRes)))
             Dictation.Error.BUSY -> show(Phase.RETRY, getString(R.string.voice_busy))
             Dictation.Error.AUDIO -> show(Phase.RETRY, getString(R.string.voice_audio_error))
         }

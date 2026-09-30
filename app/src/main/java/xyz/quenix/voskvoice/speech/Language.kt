@@ -1,5 +1,6 @@
 package xyz.quenix.voskvoice.speech
 
+import xyz.quenix.voskvoice.R
 import java.util.Locale
 
 /**
@@ -11,14 +12,19 @@ import java.util.Locale
 enum class Language(
     /** Short code, also the model folder name on the watch: `files/models/<code>`. */
     val code: String,
-    /** Label on the language button. */
+    /**
+     * Label on the language switch, written in the language itself ("Русский", "English"), as language
+     * switches usually are, so it reads the same whatever the UI language.
+     */
     val label: String,
+    /** Full name in the UI language, for the setup screen and messages. */
+    val nameRes: Int,
     val modelUrl: String,
     /** Download size, only for the UI. */
     val downloadMb: Int,
 ) {
-    RU("ru", "RU", "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip", 45),
-    EN("en", "EN", "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip", 40);
+    RU("ru", "Русский", R.string.language_ru, "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip", 45),
+    EN("en", "English", R.string.language_en, "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip", 40);
 
     fun next(): Language = entries[(ordinal + 1) % entries.size]
 

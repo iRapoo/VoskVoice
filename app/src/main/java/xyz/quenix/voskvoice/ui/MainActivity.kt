@@ -123,7 +123,7 @@ class MainActivity : Activity() {
         if (!ModelStore.isInstalled(this, language)) return false
         ModelStore.delete(this, language)
         ModelKeeperService.sync(this)
-        Toast.makeText(this, getString(R.string.model_deleted, getString(languageName(language))), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.model_deleted, getString(language.nameRes)), Toast.LENGTH_SHORT).show()
         refresh()
         return true
     }
@@ -134,7 +134,7 @@ class MainActivity : Activity() {
         micButton.isEnabled = !micGranted
 
         for ((language, button) in modelButtons) {
-            val name = getString(languageName(language))
+            val name = getString(language.nameRes)
             button.text = when (val state = ModelDownloader.state(language)) {
                 is ModelDownloader.State.Running ->
                     if (state.percent == null) getString(R.string.model_connecting, name)
@@ -146,7 +146,7 @@ class MainActivity : Activity() {
             }
         }
 
-        languageButton.text = getString(R.string.default_language, getString(languageName(settings.language)))
+        languageButton.text = getString(R.string.default_language, getString(settings.language.nameRes))
         keepSwitch.isChecked = settings.keepLoaded
 
         voiceInputStatus.text = getString(R.string.voice_input_status, getString(voiceInputHandler()))
@@ -177,10 +177,5 @@ class MainActivity : Activity() {
     private companion object {
         const val REQUEST_MIC = 1
         const val REQUEST_TEST = 2
-
-        fun languageName(language: Language) = when (language) {
-            Language.RU -> R.string.language_ru
-            Language.EN -> R.string.language_en
-        }
     }
 }
